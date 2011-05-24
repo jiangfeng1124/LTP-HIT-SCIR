@@ -1,6 +1,0 @@
-1	我	我	r	r	-	2	SBV	-	-
-2	爱	爱	v	v	-	0	HED	-	-
-3	北京	北京	ns	ns	-	4	ATT	-	-
-4	天安门	天安门	ns	ns	-	2	VOB	-	-
-5	。	。wp	wp	-	-1	PUN	-	-
-
