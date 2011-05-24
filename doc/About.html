@@ -1,0 +1,709 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="About.files/filelist.xml">
+<link rel=Edit-Time-Data href="About.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>模块名称：中文文本自动断句模块</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PersonName"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Bill_Lang</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Bill_Lang</o:LastAuthor>
+  <o:Revision>13</o:Revision>
+  <o:TotalTime>33</o:TotalTime>
+  <o:Created>2006-04-27T13:19:00Z</o:Created>
+  <o:LastSaved>2006-04-27T14:32:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>481</o:Words>
+  <o:Characters>2747</o:Characters>
+  <o:Company>IRLab</o:Company>
+  <o:Lines>22</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3222</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h2
+	{mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:网格型;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="6146"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<h2 align=center style='text-align:center'><span style='font-family:黑体;
+mso-ascii-font-family:Arial'>哈工大信息检索研究室</span> <span style='font-family:黑体;
+mso-ascii-font-family:Arial'>语言技术平台相关技术简介</span></h2>
+
+<div align=center>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:-.3pt;border-collapse:collapse;mso-yfti-tbllook:480;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>平台总指导：</span><st1:PersonName ProductID="刘挺" w:st="on"><span
+   class=GramE><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>刘挺</span></span></st1:PersonName><span
+  class=GramE><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>教授</span></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;color:red'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>平台架构及程序实现负责人：</span><st1:PersonName ProductID="郎" w:st="on"><span
+   style='mso-bidi-font-size:10.5pt;font-family:宋体'>郎</span></st1:PersonName><span
+  style='mso-bidi-font-size:10.5pt;font-family:宋体'>君<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>下列模块按平台处理顺序列出<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块名称：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>中文文本自动断句模块<span lang=EN-US><span style='mso-tab-count:1'>&nbsp; </span><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>负责人姓名：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>高立琦<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>曾经开发人员：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>陈儒<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>将<span class=GramE>中文</span>文本按照有分割意义的标点符号<span lang=EN-US>(</span>如句号<span
+  lang=EN-US>)</span>分开，以句子<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>的序列方式返回。<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>基本功能：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>输入为中文文本，输出为中文句子的序列。模块采用迭代子<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'>(iterator)</span><span style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'>的方式，可以方便地配合<span lang=EN-US>STL</span>等标准组件使用。<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>方法简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>首先实现一个分隔符<span lang=EN-US>(Separator)</span>的实例，然后实现句子迭代子<span
+  lang=EN-US>(sentence_iterator)</span>的实例。例如<span lang=EN-US>:<o:p></o:p></span></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>Separator
+  sep;<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>sentence_iterator
+  si(&amp;sr, sep), send;<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>while(
+  si != send )<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>cout
+  &lt;&lt; *si &lt;&lt; endl; //</span><span style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'>输出句子<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>si++;<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>}<span
+  style='color:red'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块名称：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>词法分析系统<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块开发者：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>张会鹏<span lang=EN-US><span style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块负责人</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>：廖先桃<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>曾经开发人员：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>高立琦、和为、王卓然<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>词法分析系统<span lang=EN-US>IRLAS</span>具有分词、时间数词识别、未登录词识别和词性标注等功能，支持多线程，具有良好的可配置性和健壮性。该系统参加了第二届<span
+  lang=EN-US>SIGHAN</span>分词评测，获北大语料封闭测试第<span lang=EN-US>3</span>名（共<span
+  lang=EN-US>16</span>家机构<span lang=EN-US>23</span>个结果，和第一名的<span lang=EN-US>F</span>值相差<span
+  lang=EN-US>0.1</span>％）。获北大语料开放测试第<span lang=EN-US>4</span>名（共<span
+  lang=EN-US>14</span>家机构<span lang=EN-US>17</span>个结果，和第一名的<span lang=EN-US>F</span>值相差<span
+  lang=EN-US>0.4</span>％）。系统实现方法是以<span lang=EN-US>Unigram</span>和<span
+  lang=EN-US>Bigram</span>为基础，利用规则的方法识别时间和数词，以基于<span lang=EN-US>HMM</span>的角色标注方法识别未登陆词，以<span
+  lang=EN-US>HMM</span>进行词性标注，最后寻优得到最佳的结果。系统利用人民日报<span lang=EN-US>6</span>月份语料测试，准确率、召回率、<span
+  lang=EN-US>F</span>值分别达到<span lang=EN-US>97.2%</span>、<span lang=EN-US>97.7%</span>、<span
+  lang=EN-US>97.4%</span>。<span lang=EN-US style='color:red'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块名称：</span><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'>NE</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>识别系统<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块负责人：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>廖先桃<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>曾经开发人员：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>于海滨<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>命名实体识别系统可识别人名、地名、机构名、专有名词、时间、日期、数量短语等七类实体。该模块采用统计和规则相结合的方法实现。先利用基于<span
+  lang=EN-US>HMM</span>的方法对文本进行初始标注，然后再利用规则的方法对错标或漏标的结果进行修正，使规则和统计相结合，达到最佳的识别效果。我们抽取的规则包括<span
+  lang=EN-US>NE</span>的内部结构特征，上下文特征，用字特征等。利用人民日报语料测试，总的<span lang=EN-US>F</span>值为<span
+  lang=EN-US>86.93</span>％。<span lang=EN-US style='color:red'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>模块名称：</span><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体;mso-font-kerning:0pt'>中文词义消<span class=GramE>歧</span>模块<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>负责人姓名：</span><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体;mso-font-kerning:0pt'>杨宇娜<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>指导老师：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>卢志茂副教授<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>模块简介：</span><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体;mso-bidi-font-family:Arial;color:black'>词义消<span
+  class=GramE>歧</span>是一项词义理解技术，让机器代替人去分析、判断和识别特定语言环境中的词义信息，这就是此模块要完成的任务。</span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-font-kerning:
+  0pt'><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>基本功能：</span><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体;mso-font-kerning:0pt'>词义消<span class=GramE>歧</span>模块，</span><span
+  style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:Arial;
+  color:black'>输入是经过分词的句子，经过词义消<span class=GramE>歧</span>系统，输出是所有的词汇都标注了词义的句子。模块可以进行全文的词义消<span
+  class=GramE>歧</span>。</span><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  mso-font-kerning:0pt'>方法简介：此模块采用了基于单纯贝叶斯概率模型的有指导词义消<span class=GramE>歧</span>方法，封闭测试准确率<span
+  lang=EN-US>93.388%</span>，开放测试准确率可以达到<span lang=EN-US>89.667%</span>。</span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;color:red'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块名称：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>中文依存句法分析<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>负责人姓名：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>马金山<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>基本功能：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>由于句法分析识别出句子的语法结构，对语言的处理不再局限于表层的匹配，而是深入语言的内部结构。其分析结果为信息检索、机器翻译、信息抽取等应用领域提供有力的支持。<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>依存句法分析系统用于对汉语进行句法分析，将句子由一个线性序列转化为一棵结构化的依存分析树，通过依存<span class=GramE>弧</span>反映句子中词汇之间的依存关系，例如：“武汉取消了<span
+  lang=EN-US>49</span>个收费项目”，依存分析的结果如下：<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:宋体'><!--[if gte vml 1]><v:shapetype
+   id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+   path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:256.5pt;
+   height:90.75pt;mso-wrap-style:square;mso-wrap-distance-left:9.05pt;
+   mso-wrap-distance-right:9.05pt;mso-position-horizontal-relative:page;
+   mso-position-vertical-relative:page'>
+   <v:imagedata src="About.files/image001.png" o:title=""/>
+   <o:lock v:ext="edit" aspectratio="f"/>
+  </v:shape><![endif]--><![if !vml]><img width=342 height=121
+  src="About.files/image002.jpg" hspace=12 v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>方法简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>有效利用句法结构和词汇化是句法分析建模所面临的两个主要困难，本系统在这两方面做了有益的探索。首先，实验室标注了<span lang=EN-US>6</span>万句的大规模依存树库，提供较为丰富的词汇信息来源。通过对大规模<span
+  class=GramE>依存树库的</span>统计学习，获取其中的词汇依存信息，建立了一个词汇化的概率分析模型。然后引入词汇支配度的概念，充分利用了句子中的结构信息。该词汇化方法有效地弥补了以前工作中词性信息的粒度过粗问题，同时词汇支配度增强了对句法结构的识别，有效地避免了非法结构的生成。<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>在分析算法上，我们使用一个确定性的搜索算法，在线性时间内对句子进行解码。使分析结果的准确率和运行的时空效率上都达到了较高的水平。<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>以下是该依存分析模块所使用的依存关系标记含义，为<span
+  lang=EN-US>XML</span>系统的介绍提供参考<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='mso-bidi-font-size:10.5pt;font-family:宋体'>依存关系标记（共<span lang=EN-US>24</span>个）<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td width=370 valign=top style='width:277.65pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>定中关系<span
+    lang=EN-US>ATT</span>（<span lang=EN-US>attribute</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>数量关系<span
+    lang=EN-US>QUN</span>（<span lang=EN-US>quantity</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>并列关系<span
+    lang=EN-US>COO</span>（<span lang=EN-US>coordinate</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>同位关系<span
+    lang=EN-US>APP</span>（<span lang=EN-US>appositive</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>前附加关系<span
+    lang=EN-US>LAD</span>（<span lang=EN-US>left adjunct</span>）<span
+    lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>后附加关系<span
+    lang=EN-US>RAD</span>（<span lang=EN-US>right adjunct</span>）<span
+    lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>动宾关系<span
+    lang=EN-US>VOB</span>（<span lang=EN-US>verb-object</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span class=GramE><span style='mso-bidi-font-size:10.5pt;
+    font-family:宋体'>介</span></span><span style='mso-bidi-font-size:10.5pt;
+    font-family:宋体'>宾关系<span lang=EN-US>POB</span>（<span lang=EN-US>preposition-object</span>）<span
+    lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>主谓关系<span
+    lang=EN-US>SBV</span>（<span lang=EN-US>subject-verb</span>）<span
+    lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>比拟关系<span
+    lang=EN-US>SIM</span>（<span lang=EN-US>similarity</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>核心<span
+    lang=EN-US>HED</span>（<span lang=EN-US>head</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>连<span
+    class=GramE>动结构</span><span lang=EN-US>VV</span>（<span lang=EN-US>verb-verb</span>）<span
+    lang=EN-US style='color:red'><o:p></o:p></span></span></p>
+    </td>
+    <td width=370 valign=top style='width:277.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>关联结构<span
+    lang=EN-US>CNJ</span>（<span lang=EN-US>conjunctive</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>语态结构<span
+    lang=EN-US>MT</span>（<span lang=EN-US>mood-tense</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>独立结构<span
+    lang=EN-US>IS</span>（<span lang=EN-US>independent structure</span>）<span
+    lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>状中结构<span
+    lang=EN-US>ADV</span>（<span lang=EN-US>adverbial</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span class=GramE><span style='mso-bidi-font-size:10.5pt;
+    font-family:宋体'>动补结构</span></span><span lang=EN-US style='mso-bidi-font-size:
+    10.5pt;font-family:宋体'>CMP</span><span style='mso-bidi-font-size:10.5pt;
+    font-family:宋体'>（<span lang=EN-US>complement</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>“的”字结构<span
+    lang=EN-US>DE<o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>“地”字结构<span
+    lang=EN-US>DI<o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>“得”字结构<span
+    lang=EN-US>DEI<o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>“把”字结构<span
+    lang=EN-US>BA<o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>“被”字结构<span
+    lang=EN-US>BEI<o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>独立分句<span
+    lang=EN-US>IC</span>（<span lang=EN-US>independent clause</span>）<span
+    lang=EN-US><o:p></o:p></span></span></p>
+    <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>依存分句<span
+    lang=EN-US>DC</span>（<span lang=EN-US>dependent clause</span>）<span
+    lang=EN-US style='color:red'><o:p></o:p></span></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块名称：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>语义角色标注（<span lang=EN-US>SRL</span>）<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>负责人姓名：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>刘怀军<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>指导老师：</span><span class=GramE><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体'>车万翔</span></span><span lang=EN-US style='mso-bidi-font-size:
+  10.5pt;font-family:宋体'><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>找到给定输入句子中所有动词的句法成分，并且用一定的语义角色参数来填充这些句法成分，最后输出能在一定程度上反映句子意义的某种表示形式<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体'>基本功能：对于给定的句子，标注所有动词的句法成分为对应的语义角色类型。目前模块只标注<span
+  lang=EN-US>7</span>类语义角色：施事，受事，数量词性质的施事和受事，附加成分时间、地点和方位<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>方法简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>基于依存句法分析和对应的一些规则。考虑语义角色和目标动词的依存关系，以及和动词的相对位置，对上述的<span lang=EN-US>7</span>类语义角色分别制定对应的识别规则。<span
+  lang=EN-US style='color:red'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块名称：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>单文档文摘模块<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>负责人姓名：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>龚诚<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>曾经开发人员：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>于海滨<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>通过此模块可以得到一篇文本的文摘<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>基本功能：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>输入<span lang=EN-US>XML</span>格式的文本，将单文档文摘加入<span lang=EN-US>XML</span>格式的文本中<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>方法简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>基于句子权重的文摘生成方法。首先计算词的权重，然后根据句子中的词的权重和句子在文本中的位置信息产生句子权重，然后根据句子权重选择备选文摘句，最后根据要求的文摘字数生成文摘。<span
+  lang=EN-US style='color:red'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块名称：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>单一文本分类系统<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>负责人姓名：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>林建国<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>曾经开发人员：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>赵<span class=GramE>世</span>奇、陈毅<span class=GramE>恒</span><span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>模块简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>本模块为文本分类模块。应用文本分类技术对给定的未知文本根据设定的文本类别系统，自动标记该给定文本的类别信息。现在该模块共有两套文本系统可供选择，一个是中图分类系统，共有包括机械，经济，哲学等<span
+  lang=EN-US>36</span>个类别另一个是新闻文本分类系统，包括财经，生活，教育，军事等<span lang=EN-US>11</span>个类别。<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>基本功能：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>在有一个规定的类别系统的情况下，我们可以根据文本的内容给该文本一个所属的类别信息。比如网易就把新闻文本根据内容分为财经，生活，军事等<span
+  lang=EN-US>14</span>个类别。而该模块的功能就是在设定一个文本分类体系的前提下，对一个未知文本自动标示出该文本的所属类别。<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red'>方法简介：</span><span style='mso-bidi-font-size:10.5pt;font-family:
+  宋体'>使用向量空间模型表示一个文本信息，使用文本的词条作为特征信息，在对特征的<span class=GramE>降维之后</span>，使用<span
+  lang=EN-US>SVM</span>分类器进行分类。<span lang=EN-US style='color:red'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;color:red'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21;mso-yfti-lastrow:yes;height:15.55pt'>
+  <td width=756 valign=top style='width:566.9pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.55pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>模块名称：</span><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体;mso-font-kerning:0pt'>指代消解<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>负责人姓名：</span><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体;mso-font-kerning:0pt'>李正华<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>指导老师：</span><st1:PersonName ProductID="郎"
+  w:st="on"><span style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-font-kerning:
+   0pt'>郎</span></st1:PersonName><span style='mso-bidi-font-size:10.5pt;
+  font-family:宋体;mso-font-kerning:0pt'>君<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>基本功能：</span><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体;mso-font-kerning:0pt'>对文本中出现的第三人称代词单数形式“他”或“她”进行消解，识别出代词所指的人的姓名。<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:red;mso-font-kerning:0pt'>模块简介：<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  mso-font-kerning:0pt'>指代消解功能举例：<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  color:blue;mso-font-kerning:0pt'>李四</span><span style='mso-bidi-font-size:
+  10.5pt;font-family:宋体;mso-font-kerning:0pt'>现在是哈工大计算机系大四的学生。<span
+  style='color:blue'>他</span>非常的喜欢体育运动。<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  mso-font-kerning:0pt'>其中，“他”所指的是“李四”。指代消解要做的工作就是识别出这种指代关系。<span lang=EN-US><o:p></o:p></span></span></p>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;font-family:宋体;
+  mso-font-kerning:0pt'>方法简介：现在系统是一个最基本的系统。采用的方法也非常简单。</span><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;font-family:宋体;color:red'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

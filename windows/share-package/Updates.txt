@@ -1,0 +1,206 @@
+			LTP Update Log
+#----------
+v2.1 (2009-06-19 by Nash)
+#----------
+
+1. 增加CRFWordSeg接口
+2. 解决了若干svmtagger的bug
+3. 解决了若干ner的bug
+4. 解决LTP对文字进行修改的bug
+5. 解决使用vector作为DLL接口参数类型的bug (VS2008下出错)
+6. 更新LTP使用文档
+7. 最新版我们只提供vs2008对应的DLL，如果希望在visual studio其他版本上运行，可以尝试安装
+	Microsoft Visual C++ 2008 Redistributable Package (x86)
+	http://www.microsoft.com/downloads/details.aspx?FamilyID=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF&displaylang=en
+
+#----------
+v2.0 (2009-01-08 by Carl)
+#----------
+
+重要更新:
+
+1. 增加基于CRF的分词，可以替换原IRLAS模块。此分词系统主要性能为：准确率：0.96，分词：323.59 KB/s
+
+		
+#----------
+v2.0 (2008-12-30 by Nash)
+#----------
+
+重要更新:
+
+1. 删除了单文档文摘(SDS)、文本分类(TextClassify)、共指消解(CR)三个篇章级处理模块，LTP专注于句子级处理模块的研究和融合。
+
+2. 不再共享问答、汉英双语、单文档文摘、多文档文摘语料。
+
+3. 增加了基于图的依存分析器，性能提高了约10个百分点。增加接口GParser()
+   原来的依存分析器是基于局部动态优化的方法，保留。接口不变Parser()
+   您可以根据自己的需要来调用其中一个接口，如果同时调用则先调用的句法分析器起作用。
+
+两个句法分析器的性能效率比较：
+			Parser-mjs		GParser
+效率(句子/秒)		500		1
+模型加载时间(秒)		1		14
+UAS			68.1		78.23
+LAS			64.5		73.91
+
+速度测试使用机器(AMD Athlon 双核CPU 2.0GHZ; RAM 1G)
+实验使用HIT-IR-CDT 1-8000句训练，9001-10000句测试，词性标注使用svmtagger自动词性标注结果。
+LTPv2.0使用GParser在HIT-IR-CDT 10000句上训练出的模型。
+
+4. 增加了VS2008的DLL库
+    目前在VC6.0、VS2003、VS2008下测试都比较稳定。
+
+
+#----------
+v1.5.0 (2008-07-07 by Nash)
+#----------
+
+Chief changes:
+1. Add a POS-Tagging module which is based on SVMTool.
+
+++++++++++++++++++++++++++++++++
+增加了基于svmtool的汉语词性标注模块。
+接口：
+	保留原来的int IRLAS()，它完成词法分析的功能：基于图的分词+基于HMM的词性标注
+	增加：
+		int SegmentWord(); 	# 分词，调用IRLAS中的分词
+		int PosTag();	# 基于svmtool的词性标注。
+保留IRLAS接口的原因：
+	和以前版本兼容，用户如果不想使用新的模块，则不需要修改程序。
+	方便用户对比两种词性标注方法。
+
+用户如何修改原来的程序以使用新的词性标注模块？
+	将用户程序中的IRLAS直接替换成PosTag即可。（根据模块的依赖关系，PosTag会自动调用SegmentWord。）
+
+另外需要注意：
+	如果调用了SegmentWord，那么只能通过PosTag进行词性标注。（IRLAS是一个集成的接口，要么做分词+词性标注，要么什么都不做。）
+++++++++++++++++++++++++++++++++
+
+2. Fixed a bug in SRL module.
+
+
+#----------
+v1.4.3 (2008-04-24 by Nash)
+#----------
+
+Chief changes:
+1. srl module is updated. Fix a few bugs.
+2. cr module is updated.
+3. Fixed a bug in ner module.
+
+
+#----------
+v1.4.2 (2008-01-11 by Nash)
+#----------
+
+Chief changes:
+1. _parser.dll may cause error: divided by zero. This is a bug. We have fixed it.
+
+#----------
+v1.4.1 (2007-12-8 by Nash)
+#----------
+
+Chief changes:
+1. The visualization effect is better and powerful.
+				You can see the semantic frame of each Predict by clicking on the link word.
+				A few bugs are fixed by Wang Lijie.
+2. The semantic roles in SRL are abbreviated for better display effect. Such as:
+				ARG0 => A0
+				ARGM-ADV => AM-ADV
+
+
+#----------
+v1.4.1 (2007-12-3 by Nash)
+#----------
+
+Chief changes:
+1. Fix two bugs of LTP programming Library
+2. Fix a bug of SRL
+2. Fix a bug in XSL files
+
+
+#----------
+v1.4.0 (2007-12-1 by Li Zhenghua)
+#----------
+
+Chief changes:
+1.	Named Entity Recognition Module (NER) adpots Maximum Entropy model, instead of HMM model.
+2.	Semantic Role Labeling Module (SRL) adpots Maximum Entropy model.
+3.	The visualization of dependency syntax is changed. You can see the change when you choose to display sentence by sentence (按句子显示).
+4.	The document is supplemented and updated to v1.4, mainly about the standard and meaning of POS tag set, NE type and syntax realtion adopted by LTP.
+5.	Fix a few bugs.
+
+
+#----------
+v1.3.3 (2007-10-7 by Li Zhenghua)
+#----------
+
+Chief changes:
+1.	Change the dependency relations amongs modules in that IRLAS is no more depend on SplitSentence. 
+	You must call SplitSentence() if you need LTP to split sentence for you. 
+	Otherwise, LTP will take a paragraph as a single sentence.
+2.	Documentation is written.
+3.	"irlas_config.ini", the configuration file of IRLAS is renamed as "irlas.ini" 
+	and must be in the folder "ltp_data/irlas_data". For detailed information, you can 
+	take a look at the LTP configuration file "ltp_all_modules.conf".
+4. 	the data format in data/irlas_data/extend_dict.dat is changed so that users can add words more easily.
+5.	Fix a few bugs.
+
+#----------
+v1.3.2 (2007-5-8 by Li Zhenghua)
+#----------
+
+1.	Fix a bug of extending word dictionary in IRLAS. (v1.3.2)
+
+
+#----------
+v1.3.1 (2007-4-30 by Li Zhenghua)
+#----------
+
+1.	Change the arc direction of parser visualization.
+
+
+#----------
+v1.3 (2007-4-13 by Li Zhenghua)
+#----------
+
+1. 	data/irlas_data/extend_dict.dat was compressed. This file contains extended words used by IRLAS. Now it is uncompressed,
+		so that you can add any extended words into it as you wish. 
+2.	Fix a vector-access-violation bug in parser.
+3.	Provide python interface.
+
+#----------
+v1.2 (2007-1-11 by Li Zhenghua)
+#----------
+
+这个版本提供了方便的接口，使得用户不但可以利用LTP提供的各种底层模块处理
+文本（分句、分词词性标注IRLAS、NE、词义消歧WSD、依存句法分析Parser、单文档自动文摘SDS、
+文本分类Text Classify、语义角色标注SRL、共指消解CR），而且可以很方便从DOM树中抽取处理结果。
+
+速度我测试了一下，完全可以满足需求。提供的都是各个底层模块最新的版本，
+基本没有内存泄露问题，而且对数据文件的分布，接口等进行了规范化。
+
+以后底层模块会不断升级。但是LTP接口不会发生很大的变化。这样，如果你希望利用升级了的底层模块做旧的实验，
+就不需要改变以前的代码，，只需要替换新的dll文件即可，很方便。LTP不但适用于做实验，
+而且对于一些项目开发的初期阶段也完全可以使用。
+
+
+#----------
+v1.1 (2006-10-12 by Lang Jun)
+#----------
+
+解决NE和SDS(单文档自动文摘)两个模块不能重复调用的问题，原因是这两个模块的资源加载和释放存在问题。
+现在如下调用main2()就很顺利了。
+
+void main()
+{
+	cout << main2("S01.txt","S01.xml","ltpconfig.ini") << endl;
+	cout << main2("S02.txt","S02.xml","ltpconfig.ini") << endl;
+}
+
+我们会在下一次更新中，提供对各个模块更加灵活的调用方式。
+
+更新方法：直接用升级包中的两个DLL覆盖v1版本中对应的文件即可
+
+HIT_IRLab_LTP_Sharing_Package_Full_v1.rar升级这两个模块后变更为
+HIT_IRLab_LTP_Sharing_Package_Full_v1.1.rar
